@@ -1,0 +1,39 @@
+#Don't forget to rename this file after copying the template
+#for a new program!
+"""
+Student Name:    Eithen Smythe
+Program Title:   Restaurant Bill
+Description:     Tech Check 1
+"""
+
+def main(): #<-- Don't change this line!
+    #Write your code below. It must be indented!
+
+    print("Welcome to Eithen's Diner")
+    print("\n")
+    restaurantBill = float(input("Please enter your original bill amount: $"))
+
+    # processing
+
+    # billAmount = 85
+
+    taxAmount = restaurantBill * 0.16
+
+    tipAmount = restaurantBill * 0.21
+
+    totalCost = restaurantBill + taxAmount + tipAmount
+
+    # output
+
+    print("\n")
+    # print("Your original Bill amount is:", '${0:.2f}'.format(billAmount))
+    print("Your original Bill amount is:", '${0:.2f}'.format(restaurantBill))
+    print("Your tax is:", '${0:.2f}'.format(taxAmount))
+    print("Your tip is:", '${0:.2f}'.format(tipAmount))
+    print("Your total is:", '${0:.2f}'.format(totalCost))
+
+    #Your code ends on the line above
+
+#Do not change any of the code below!
+if __name__ == "__main__":
+    main()
